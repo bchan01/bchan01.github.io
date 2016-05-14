@@ -19,9 +19,9 @@
             })
 
             // route for the projects page
-            .when('/projects', {
-                templateUrl : 'pages/projects.html',
-                controller  : 'projectsController'
+            .when('/resources', {
+                templateUrl : 'pages/resources.html',
+                controller  : 'resourcesController'
             });
     });
 
@@ -34,6 +34,6 @@
       
     });
 
-    myApp.controller('projectsController', function($scope) {
+    myApp.controller('resourcesController', function($scope) {
         
     });
