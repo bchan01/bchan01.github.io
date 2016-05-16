@@ -2,15 +2,13 @@
      <!-- define angular app -->
     <html ng-app="myApp">
    <head>
-    
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-      
       <!-- load angular via CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  
+      <!-- Controller -->
       <script src="script.js"></script>
     </head>
 
@@ -45,7 +43,12 @@
         </div>
 
         <!-- Footer -->
-        <div class="panel-footer">Contact Info:  <a href="mailto:brian.chan.01@gmail.com">brian.chan.01@gmail.com</a></div>
-
+        <footer>
+          <div class="container">
+            <div class="panel">
+            <div class="panel-footer"><b>Contact Info:</b>&nbsp;&nbsp;<a href="mailto:brian.chan.01@gmail.com">brian.chan.01@gmail.com</a></div>
+          </div>
+          </div>
+        </footer>
     </body>
     </html>
