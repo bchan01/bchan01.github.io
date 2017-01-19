@@ -3,26 +3,28 @@
     var myApp = angular.module('myApp', ['ngRoute']);
 
     // configure our routes
-    myApp.config(function($routeProvider) {
+    myApp.config(function($routeProvider, $locationProvider) {
         $routeProvider
-
             // route for the home page
             .when('/', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
-
             // route for the about page
             .when('/about', {
                 templateUrl : 'pages/about.html',
                 controller  : 'aboutController'
             })
-
             // route for the projects page
             .when('/resources', {
                 templateUrl : 'pages/resources.html',
                 controller  : 'resourcesController'
+            })
+            .otherwise({
+                redirectTo: '/'
             });
+            // Fix Hashbang in path
+            $locationProvider.hashPrefix('');
     });
 
     // create the controller and inject Angular's $scope
